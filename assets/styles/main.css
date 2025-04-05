@@ -1,0 +1,108 @@
+/* main.css */
+/* Estilos para o conteúdo principal */
+
+/* Container principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seção Hero (Banner) */
+.hero {
+    /* Fundo composto com gradiente para realce do texto */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../img/guarda-roupa-branco2.jpg"),
+        url("../img/cabeceira-de-cama.jpg"), url("../img/painel-de-tv.jpg");
+    background-repeat: no-repeat;
+    background-position: right, center, left;
+    background-size: contain;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-width);
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero .subtitle {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+/* Seção de Serviços */
+.servicos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.servico-item {
+    flex: 1;
+    min-width: 200px;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.servico-item:hover {
+    transform: translateY(-5px);
+}
+
+.servico-item i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.servico-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Seção CTA */
+.cta {
+    background-color: var(--primary-color);
+    color: var(--color-width);
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.cta h2 {
+    font-size: 1.3rem;
+}
+
+.cta h3 {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.2rem;
+}
+
+.cta a {
+    background-color: var(--highlight-color);
+    color: var(--color-width);
+    padding: 0.2rem 1.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta a:hover {
+    background-color: #c0392b;
+}

@@ -1,0 +1,38 @@
+/* responsive.css */
+/* Regras adicionais para responsividade em diferentes dispositivos */
+
+/* Exemplo de ajustes para telas menores */
+@media (max-width: 767px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .link-contact {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Ajustes para telas médias */
+@media (min-width: 768px) {
+    .hero .title {
+        font-size: 2.2rem;
+    }
+    .hero .subtitle {
+        font-size: 1.2rem;
+    }
+}

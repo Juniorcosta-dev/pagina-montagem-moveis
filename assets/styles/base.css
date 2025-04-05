@@ -1,0 +1,21 @@
+/* base.css */
+/* Estilos básicos para p bady e tipografia */
+body {
+    font-family: var(--primary-font);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    max-width: 100%;
+}
+
+/* classe para esconder elementos visualmente, mas manter acessíveis */
+.sr-omly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

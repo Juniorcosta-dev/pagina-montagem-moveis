@@ -1,0 +1,15 @@
+/* var.css */
+/* Variáveis globais para cores e fontes */
+:root {
+    /* Colors */
+    --primary-color: #34495e;
+    --secondary-color: #3498db;
+    --highlight-color: #e74c3c;
+    --text-color: #333;
+    --light-color: #ecf0f1;
+    --color-width: #fff;
+    --color-button-ct: #128d0b;
+
+    /* Fonts */
+    --primary-font: "Segoe UI", Verdana, sans-serif;
+}

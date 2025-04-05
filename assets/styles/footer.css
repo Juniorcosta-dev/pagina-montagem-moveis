@@ -1,0 +1,72 @@
+/* footer.css */
+/* Estilos para o rodapé */
+footer {
+    background-color: var(--primary-color);
+    color: var(--color-width);
+    padding: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Informações de contato e copyright */
+.footer-content p {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* Link de contato no rodapé */
+.contato-info a {
+    color: var(--color-width);
+    text-decoration: none;
+}
+
+.contato-info a:hover {
+    text-decoration: underline;
+}
+
+/* Link do Instagram com efeito gradiente */
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.1rem 1.6rem;
+    background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+    color: var(--color-width);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s ease;
+}
+
+.instagram-link i {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade do rodapé */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .instagram-link {
+        width: 15rem;
+    }
+}
