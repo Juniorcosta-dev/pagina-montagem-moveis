@@ -11,8 +11,8 @@ main {
 .hero {
     /* Fundo composto com gradiente para realce do texto */
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../img/guarda-roupa-branco2.jpg"),
-        url("../img/cabeceira-de-cama.jpg"), url("../img/painel-de-tv.jpg");
+        url("../img/montagem-de-guarda-roupa-branco.webp"),
+        url("../img/montagem-cabeceira-de-cama.webp"), url("../img/instalacao-painel-de-tv.webp");
     background-repeat: no-repeat;
     background-position: right, center, left;
     background-size: contain;
