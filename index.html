@@ -12,29 +12,45 @@
             content="montador de móveis, montagem de móveis, montagem e desmontagem de móveis, montador profissional"
         >
 
-        <meta name="robots" content="index, follow">
+        <meta name="robots" content="index, follow" >
 
         <meta name="author" content="JR Montagem de Móveis" >
-        <meta name="google-site-verification" content="nyhR2XkdUIaq555MHiweq4ptYvdeyI9D9VPpB9I6iKE" >
+        <meta
+            name="google-site-verification"
+            content="nyhR2XkdUIaq555MHiweq4ptYvdeyI9D9VPpB9I6iKE"
+        >
 
-        <link rel="icon" href="./assets/img/favicon-jr-montegem-de-moveis.png" type="image/png">
+        <link
+            rel="icon"
+            href="./assets/img/favicon-jr-montegem-de-moveis.png"
+            type="image/png"
+        >
 
         <title>
             Montador de móveis | Serviço de Montagem em Cachoeiro de Itapemirim
         </title>
 
-        <!-- CSS: Importação modular -->
-        <link rel="stylesheet" href="./assets/styles/reset.css" >
-        <link rel="stylesheet" href="./assets/styles/var.css" >
-        <link rel="stylesheet" href="./assets/styles/base.css" >
-        <link rel="stylesheet" href="./assets/styles/header.css" >
-        <link rel="stylesheet" href="./assets/styles/main.css" >
-        <link rel="stylesheet" href="./assets/styles/footer.css" >
-        <link rel="stylesheet" href="./assets/styles/responsive.css" >
+        <link rel="stylesheet" href="./assets/styles/main.min.css" >
 
-        <!-- FontAwesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-        
+        <link
+            rel="preload"
+            href="./assets/styles/footer.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        >
+        <noscript>
+            <link rel="stylesheet" href="./assets/styles/footer.css" >
+        </noscript>
+
+        <link
+            rel="preload"
+            href="./assets/styles/responsive.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        >
+        <noscript>
+            <link rel="stylesheet" href="./assets/styles/responsive.css" >
+        </noscript>
     </head>
     <body>
         <!-- Cabeçalho -->
@@ -44,8 +60,9 @@
                 <div class="logo-content">
                     <img
                         class="logo"
-                        src="./assets/img/logo-jr (1).svg"
+                        src="./assets/img/logo-jr.svg"
                         alt="Logo da JR Montagem de Móveis"
+                        loading="lazy"
                     >
 
                     <a href="./index.html">
@@ -63,17 +80,29 @@
                                 aria-label="Abrir conversa no WhatsApp com o montador"
                                 >Fale com o montador</a
                             >
-                            <i class="fa-brands fa-whatsapp"></i>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                            >
+                                <!-- !Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+                                <path
+                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                                />
+                            </svg>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <!-- Conteúdo Principalo -->
+        <!-- Conteúdo Principal -->
         <main>
             <!-- Seção de destaque(Hero) -->
-            <section class="hero" aria-label="Banner pricipal">
+            <section class="hero" aria-label="Banner principal">
                 <h1 class="title">
                     Montagem de Móveis em Cachoeiro de Itapemirim
                 </h1>
@@ -88,7 +117,19 @@
 
                 <!-- Card 1 -->
                 <article class="servico-item">
-                    <i class="fas fa-tools"></i>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                        fill="currentColor"
+                        viewBox="0 0 512 512"
+                    >
+                        <!-- !Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+                        <path
+                            d="M78.6 5c-9.5-7.4-23-6.5-31.6 2L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4H158l109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3L192 158v-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1 0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9l117.8-117.8c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16v-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0c-79.5 0-144 64.5-144 144v.8l85.3 85.3c36-9.1 75.8.5 104 28.7l15.7 15.7c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1-48 0z"
+                        />
+                    </svg>
+
                     <h3>Montagem de móveis</h3>
                     <p>
                         Montagem profissional de qualquer tipo de móvel, com
@@ -98,17 +139,40 @@
 
                 <!-- Card 2 -->
                 <article class="servico-item">
-                    <i class="fas fa-truck"></i>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                        fill="currentColor"
+                        viewBox="0 0 640 512"
+                    >
+                        <!-- !Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+                        <path
+                            d="M48 0C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h16c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zm368 160h50.7l77.3 77.3V256H416v-96zM112 416a48 48 0 1 1 96 0 48 48 0 1 1-96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                        />
+                    </svg>
+
                     <h3>Atendimento Rápido</h3>
                     <p>
                         Agendamentos para o mesmo dia ou próximo dia útil,
-                        conforma disponibilidade.
+                        conforme disponibilidade.
                     </p>
                 </article>
 
                 <!-- Card 3 -->
                 <article class="servico-item">
-                    <i class="fas fa-hand-holding-usd"></i>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                        fill="currentColor"
+                        viewBox="0 0 576 512"
+                    >
+                        <!-- !Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+                        <path
+                            d="M312 24v10.5c6.4 1.2 12.6 2.7 18.2 4.2 12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17c-10.9-2.9-21.1-4.9-30.2-5-7.3-.1-14.7 1.7-19.4 4.4-2.1 1.3-3.1 2.4-3.5 3-.3.5-.7 1.2-.7 2.8v.6c.2.2.9 1.2 3.3 2.6 5.8 3.5 14.4 6.2 27.4 10.1l.9.3c11.1 3.3 25.9 7.8 37.9 15.3 13.7 8.6 26.1 22.9 26.4 44.9.3 22.5-11.4 38.9-26.7 48.5-6.7 4.1-13.9 7-21.3 8.8V232c0 13.3-10.7 24-24 24s-24-10.7-24-24v-11.4c-9.5-2.3-18.2-5.3-25.6-7.8-2.1-.7-4.1-1.4-6-2-12.6-4.2-19.4-17.8-15.2-30.4s17.8-19.4 30.4-15.2c2.6.9 5 1.7 7.3 2.5 13.6 4.6 23.4 7.9 33.9 8.3 8 .3 15.1-1.6 19.2-4.1 1.9-1.2 2.8-2.2 3.2-2.9.4-.6.9-1.8.8-4.1v-.2c0-1 0-2.1-4-4.6-5.7-3.6-14.3-6.4-27.1-10.3l-1.9-.6c-10.8-3.2-25-7.5-36.4-14.4-13.5-8.1-26.5-22-26.6-44.1-.1-22.9 12.9-38.6 27.7-47.4 6.4-3.8 13.3-6.4 20.2-8.2L264 24c0-13.3 10.7-24 24-24s24 10.7 24 24zm256.2 312.3c13.1 17.8 9.3 42.8-8.5 55.9l-126.6 93.3c-23.4 17.2-51.6 26.5-80.7 26.5H32c-17.7 0-32-14.3-32-32v-64c0-17.7 14.3-32 32-32h36.8l44.9-36c22.7-18.2 50.9-28 80-28H352c17.7 0 32 14.3 32 32s-14.3 32-32 32h-80c-8.8 0-16 7.2-16 16s7.2 16 16 16h120.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384h-.9.9z"
+                        />
+                    </svg>
                     <h3>Preço justo</h3>
                     <p>
                         Orçamento trasparente sem surpresas ou taxas escondidas.
@@ -141,8 +205,21 @@
                     target="_blank"
                     class="instagram-link"
                     aria-label="Acesse nosso Instagram"
-                    ><i class="fa-brands fa-square-instagram"></i>Siga nosso
-                    Instagram</a
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 448 512"
+                    >
+                        <!-- !Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                        />
+                    </svg>
+
+                    Siga nosso Instagram</a
                 >
 
                 <!-- Informações de contato -->
@@ -165,7 +242,7 @@
                 <!-- Copyright -->
                 <p>
                     &copy; 2025 JR Montagem de Móveis - Todos os direitos
-                    reservados/p>
+                    reservados.
                 </p>
             </div>
         </footer>
